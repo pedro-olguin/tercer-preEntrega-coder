@@ -1,5 +1,4 @@
-/* header */
-
+/*header*/
 .bodyContainer {
   background-color: #d0c8bd;
 }
@@ -14,10 +13,8 @@
 
 .fontStyle a {
   font-size: 20px;
-
   color: black;
 }
-
 .fontStyle a:hover {
   color: #df0914;
 }
@@ -25,25 +22,11 @@
 .redesIcon a {
   color: black;
 }
-
 .redesIcon a:hover {
   color: #df0914;
 }
 
-/* media queries header*/
-.redesButtonContainer {
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-.fontStyle a {
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-}
-
-/* main */
+/*main*/
 .carousel-inner img {
   width: 80%;
   margin: 0 auto;
@@ -58,26 +41,13 @@ div.cajasContainer {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 767px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1199px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .cajas {
   margin: 5px;
   padding: 10px;
 }
-
-.cajas h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.cajas p {
+.cajas h1, .cajas p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -93,11 +63,9 @@ div.cajasContainer {
   padding: 5px;
   border: none;
 }
-
 .butContainer a {
   color: white;
 }
-
 .butContainer a:hover {
   color: #df0914;
 }
@@ -111,15 +79,11 @@ div.cajasContainer {
   border: dotted #fed792 2px;
 }
 
-.ubicacion {
+.ubicacion, .gMaps {
   margin: 10px;
 }
 
-.gMaps {
-  margin: 10px;
-}
-
-/* footer */
+/*footer*/
 .footerContainer {
   background-color: #a9a39a;
   padding-top: 20px;
@@ -144,19 +108,7 @@ div.cajasContainer {
   margin: auto;
 }
 
-/* media queries footer */
-.footerContainer {
-  @media (max-width: 767px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 576px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* styles contacto */
-
+/*pageContacto*/
 .cMainContainer {
   display: flex;
   flex-direction: column;
@@ -170,14 +122,12 @@ div.cajasContainer {
   margin: 20px auto;
   border-radius: 20px;
 }
-
 .cFormContainer h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   margin: 10px;
   font-weight: bolder;
 }
-
 .cFormContainer p {
   color: #df0914;
   text-decoration: underline;
@@ -188,13 +138,7 @@ label {
   font-weight: bolder;
 }
 
-input {
-  margin: 5px auto;
-  width: 40%;
-  text-align: center;
-}
-
-textarea {
+input, textarea {
   margin: 5px auto;
   width: 40%;
   text-align: center;
@@ -204,35 +148,10 @@ textarea {
   color: #df0914;
 }
 
-input {
-  @media (max-width: 767px) {
-    width: 85%;
-  }
-
-  @media (max-width: 576px) {
-    width: 90%;
-  }
-}
-
-textarea {
-  @media (max-width: 767px) {
-    width: 85%;
-  }
-
-  @media (max-width: 576px) {
-    width: 90%;
-  }
-}
-
-/* Cartas */
-
+/*pageCartas*/
 .cartasContainer {
   display: grid;
   grid-template-columns: 1fr;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    margin: 50px 0;
-  }
 }
 
 .mContainer {
@@ -247,24 +166,24 @@ textarea {
 .cartasImg {
   max-width: 400px;
   width: 90%;
-  @media (min-width: 768px) {
-    max-width: 600px;
-  }
 }
+
 div .titCartas {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .down a {
   color: #df0914;
 }
-/*Nosotros*/
 
+/*Nosotros*/
 .mainNosotros {
   margin: 20px 5px;
   text-align: center;
 }
+
 .nTitle {
   color: #df0914;
   text-decoration: underline;
@@ -276,36 +195,33 @@ div .titCartas {
 }
 
 /*obseguios*/
-
 .oPromo {
   width: 80%;
   max-width: 300px;
 }
+
 .oPromoP {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #df0914;
   font-size: 14px;
 }
+
 .oTitle {
   margin-top: 20px;
   text-align: center;
   text-decoration: underline;
   color: #df0914;
 }
+
 .oParrafo {
   text-align: center;
   font-size: 20px;
   margin: 20px;
 }
+
 .oCardsContainer {
   display: grid;
   grid-template-columns: 1fr;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .oContainer {
@@ -318,4 +234,5 @@ div .titCartas {
   margin: 20px 0;
   background-color: #a9a39a;
 }
-/* NO LLEGUE A DARLE EL ESTILO QUE QUERIA A LA ULTIMA PAGINA PERDOOONNNN.!*/
+
+/*# sourceMappingURL=styles.css.map */
