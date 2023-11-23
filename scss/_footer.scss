@@ -22,4 +22,12 @@
   .buttonsFooterContainer {
     text-align: center;
     margin: auto;
+    a {
+      color: $color-negro;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-rojo;
+      }
+    }
   }

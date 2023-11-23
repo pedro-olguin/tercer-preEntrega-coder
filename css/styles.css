@@ -19,8 +19,13 @@
   color: #df0914;
 }
 
+.redesButton a {
+  color: black;
+}
+
 .redesIcon a {
   color: black;
+  text-decoration: none;
 }
 .redesIcon a:hover {
   color: #df0914;
@@ -49,6 +54,38 @@
 .buttonsFooterContainer {
   text-align: center;
   margin: auto;
+}
+.buttonsFooterContainer a {
+  color: black;
+  text-decoration: none;
+}
+.buttonsFooterContainer a:hover {
+  color: #df0914;
+}
+
+/*mediaQ header*/
+@media (max-width: 768px) {
+  .redesButtonContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fontStyle a {
+    font-size: 18px;
+  }
+}
+
+/* media queries footer */
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*main principal*/
@@ -87,7 +124,8 @@ div.cajasContainer {
   border: none;
 }
 .butContainer a {
-  color: white;
+  color: black;
+  text-decoration: none;
 }
 .butContainer a:hover {
   color: #df0914;
@@ -104,6 +142,11 @@ div.cajasContainer {
 
 .ubicacion, .gMaps {
   margin: 10px;
+}
+
+.ubicacion p a {
+  color: #df0914;
+  text-decoration: none;
 }
 
 /* media queries mainPrincipal*/
@@ -243,31 +286,6 @@ div .titCartas {
   text-align: center;
   margin: 20px 0;
   background-color: #a9a39a;
-}
-
-/*mediaQ header*/
-@media (max-width: 768px) {
-  .redesButtonContainer {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .fontStyle a {
-    font-size: 18px;
-  }
-}
-
-/* media queries footer */
-@media (max-width: 768px) {
-  .footerContainer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 576px) {
-  .footerContainer {
-    grid-template-columns: 1fr;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@
 @import "mixin";
 @import "header";
 @import "footer";
+@import "mediaQ";
 
   
 /*main principal*/
@@ -40,9 +41,10 @@
     margin: 5px auto;
     padding: 5px;
     border: none;
-    
+
     a {
-      color: $color-blanco;
+      color: $color-negro;
+      text-decoration: none;
   
       &:hover {
         color: $color-rojo;
@@ -61,6 +63,11 @@
   
   .ubicacion, .gMaps {
     margin: 10px;
+  }
+  
+  .ubicacion p a {
+    color: $color-rojo;
+    text-decoration: none;
   }
   
   /* media queries mainPrincipal*/
@@ -213,5 +220,4 @@
   }
   
 
-@import "mediaQ--header";
-@import "mediaQ--footer";
+

@@ -1,0 +1,23 @@
+  /*mediaQ header*/
+
+  .redesButtonContainer {
+    @include tabletMax {
+        display: none;
+    }
+  }
+  .fontStyle a {
+    @include tabletMax {
+        font-size: 18px;
+    }
+  }
+
+    /* media queries footer */
+
+    .footerContainer {
+      @include tabletMax {
+          grid-template-columns: 1fr 1fr;
+      }
+      @include movilMax {
+          grid-template-columns: 1fr;
+      }
+    }
