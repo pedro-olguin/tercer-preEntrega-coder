@@ -26,7 +26,32 @@
   color: #df0914;
 }
 
-/*main*/
+/*footer*/
+.footerContainer {
+  background-color: #a9a39a;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  height: max-content;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.horariosFooter {
+  font-size: 0.7rem;
+  margin: auto;
+}
+
+.logoFooterContainer {
+  text-align: center;
+}
+
+.buttonsFooterContainer {
+  text-align: center;
+  margin: auto;
+}
+
+/*main principal*/
 .carousel-inner img {
   width: 80%;
   margin: 0 auto;
@@ -39,8 +64,6 @@ div.cajasContainer {
   margin: 20px auto;
   text-align: center;
   grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
 }
 
 .cajas {
@@ -83,29 +106,16 @@ div.cajasContainer {
   margin: 10px;
 }
 
-/*footer*/
-.footerContainer {
-  background-color: #a9a39a;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  height: max-content;
-  display: grid;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr;
+/* media queries mainPrincipal*/
+@media (min-width: 768px) {
+  div.cajasContainer {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-.horariosFooter {
-  font-size: 0.7rem;
-  margin: auto;
-}
-
-.logoFooterContainer {
-  text-align: center;
-}
-
-.buttonsFooterContainer {
-  text-align: center;
-  margin: auto;
+@media (min-width: 900px) {
+  div.cajasContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*pageContacto*/
@@ -233,6 +243,31 @@ div .titCartas {
   text-align: center;
   margin: 20px 0;
   background-color: #a9a39a;
+}
+
+/*mediaQ header*/
+@media (max-width: 768px) {
+  .redesButtonContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fontStyle a {
+    font-size: 18px;
+  }
+}
+
+/* media queries footer */
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

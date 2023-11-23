@@ -1,39 +1,15 @@
-/*header*/
-.bodyContainer {
-    background-color: #d0c8bd;
-  }
+@import "variables";
+@import "mixin";
+@import "header";
+@import "footer";
+
   
-  .headerContainer {
-    background-color: #a9a39a;
-  }
-  
-  .buttonHeaderContainer {
-    width: 141.61px;
-  }
-  
-  .fontStyle a {
-    font-size: 20px;
-    color: black;
-  
-    &:hover {
-      color: #df0914;
-    }
-  }
-  
-  .redesIcon a {
-    color: black;
-  
-    &:hover {
-      color: #df0914;
-    }
-  }
-  
-/*main*/
+/*main principal*/
   .carousel-inner img {
     width: 80%;
     margin: 0 auto;
     border-radius: 20px;
-    border: #df0914 solid 2px;
+    border: $color-rojo solid 2px;
   }
   
   div.cajasContainer {
@@ -41,8 +17,7 @@
     margin: 20px auto;
     text-align: center;
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
+
   }
   
   .cajas {
@@ -50,7 +25,7 @@
     padding: 10px;
   
     h1, p {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: $fuente-parrafos
     }
   }
   
@@ -61,16 +36,16 @@
   
   .butContainer {
     border-radius: 10px;
-    background-color: #d0c8bd;
+    background-color: $color-grisClaro;
     margin: 5px auto;
     padding: 5px;
     border: none;
-  
+    
     a {
-      color: white;
+      color: $color-blanco;
   
       &:hover {
-        color: #df0914;
+        color: $color-rojo;
       }
     }
   }
@@ -88,34 +63,19 @@
     margin: 10px;
   }
   
+  /* media queries mainPrincipal*/
 
-  /*footer*/
+  div.cajasContainer {
+    @include tabletMin {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  .footerContainer {
-    background-color: #a9a39a;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    height: max-content;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .horariosFooter {
-    font-size: 0.7rem;
-    margin: auto;
-  }
-  
-  .logoFooterContainer {
-    text-align: center;
-  }
-  
-  .buttonsFooterContainer {
-    text-align: center;
-    margin: auto;
+    @include deskMin {
+        grid-template-columns: repeat(3 , 1fr);
+    }
   }
 
-  
+
   /*pageContacto*/
 
   .cMainContainer {
@@ -139,7 +99,7 @@
     }
   
     p {
-      color: #df0914;
+      color: $color-rojo;
       text-decoration: underline;
       padding: 5px;
     }
@@ -156,7 +116,7 @@
   }
   
   .butContainer:hover {
-    color: #df0914;
+    color: $color-rojo;
   }
 
   
@@ -188,7 +148,7 @@
   }
   
   .down a {
-    color: #df0914;
+    color: $color-rojo;
   }
 
   
@@ -200,7 +160,7 @@
   }
   
   .nTitle {
-    color: #df0914;
+    color: $color-rojo;
     text-decoration: underline;
   }
   
@@ -219,7 +179,7 @@
   
   .oPromoP {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #df0914;
+    color: $color-rojo;
     font-size: 14px;
   }
   
@@ -227,7 +187,7 @@
     margin-top: 20px;
     text-align: center;
     text-decoration: underline;
-    color: #df0914;
+    color: $color-rojo;
   }
   
   .oParrafo {
@@ -252,3 +212,6 @@
     background-color: #a9a39a;
   }
   
+
+@import "mediaQ--header";
+@import "mediaQ--footer";

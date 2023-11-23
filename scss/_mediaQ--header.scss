@@ -1,0 +1,12 @@
+  /*mediaQ header*/
+
+  .redesButtonContainer {
+    @include tabletMax {
+        display: none;
+    }
+  }
+  .fontStyle a {
+    @include tabletMax {
+        font-size: 18px;
+    }
+  }
