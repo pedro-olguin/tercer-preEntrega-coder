@@ -63,34 +63,9 @@
   color: #df0914;
 }
 
-/*mediaQ header*/
-@media (max-width: 768px) {
-  .redesButtonContainer {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .fontStyle a {
-    font-size: 18px;
-  }
-}
-
-/* media queries footer */
-@media (max-width: 768px) {
-  .footerContainer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 576px) {
-  .footerContainer {
-    grid-template-columns: 1fr;
-  }
-}
-
 /*main principal*/
-.carousel-inner img {
-  width: 80%;
+div .carousel-inner div img {
+  width: 70%;
   margin: 0 auto;
   border-radius: 20px;
   border: #df0914 solid 2px;
@@ -107,7 +82,8 @@ div.cajasContainer {
   margin: 5px;
   padding: 10px;
 }
-.cajas h1, .cajas p {
+.cajas h1,
+.cajas p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -130,6 +106,12 @@ div.cajasContainer {
 .butContainer a:hover {
   color: #df0914;
 }
+.butContainer a:active {
+  background-color: #df0914;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 .info {
   display: flex;
@@ -140,7 +122,8 @@ div.cajasContainer {
   border: dotted #fed792 2px;
 }
 
-.ubicacion, .gMaps {
+.ubicacion,
+.gMaps {
   margin: 10px;
 }
 
@@ -191,9 +174,10 @@ label {
   font-weight: bolder;
 }
 
-input, textarea {
+input,
+textarea {
   margin: 5px auto;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 
@@ -272,20 +256,113 @@ div .titCartas {
   margin: 20px;
 }
 
-.oCardsContainer {
+.oTitleSection {
+  text-align: center;
+  width: 100%;
+}
+
+.oSection {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.oContainer {
+.oArticle {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+div.card {
+  width: 286px;
+  height: 475px;
   text-align: center;
-  margin: 20px 0;
+}
+
+div.card-body {
   background-color: #a9a39a;
+}
+div.card-body a {
+  color: black;
+  text-decoration: none;
+}
+div.card-body a:hover {
+  color: #df0914;
+}
+div.card-body a:active {
+  background-color: #df0914;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*mediaQ header*/
+@media (max-width: 768px) {
+  .redesButtonContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fontStyle a {
+    font-size: 18px;
+  }
+}
+
+/* media queries footer */
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Contacto*/
+@media (max-width: 768px) {
+  input {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  textarea {
+    width: 90%;
+  }
+}
+
+/*pageCartas*/
+@media (min-width: 768px) {
+  .cartasContainer {
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cartasImg {
+    max-width: 600px;
+  }
+}
+
+/*pageObsequios*/
+@media (min-width: 900px) {
+  .oSection {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

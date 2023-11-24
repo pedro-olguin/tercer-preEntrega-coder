@@ -2,222 +2,236 @@
 @import "mixin";
 @import "header";
 @import "footer";
-@import "mediaQ";
 
-  
+
+
 /*main principal*/
-  .carousel-inner img {
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: $color-rojo solid 2px;
-  }
-  
-  div.cajasContainer {
-    display: grid;
-    margin: 20px auto;
-    text-align: center;
-    grid-template-columns: 1fr;
+div .carousel-inner div img {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: $color-rojo solid 2px;
+}
 
-  }
-  
-  .cajas {
-    margin: 5px;
-    padding: 10px;
-  
-    h1, p {
-      font-family: $fuente-parrafos
-    }
-  }
-  
-  .imgs {
-    border-radius: 25px;
-    width: 300px;
-  }
-  
-  .butContainer {
-    border-radius: 10px;
-    background-color: $color-grisClaro;
-    margin: 5px auto;
-    padding: 5px;
-    border: none;
+div.cajasContainer {
+  display: grid;
+  margin: 20px auto;
+  text-align: center;
+  grid-template-columns: 1fr;
 
-    a {
-      color: $color-negro;
-      text-decoration: none;
-  
-      &:hover {
-        color: $color-rojo;
-      }
-    }
+}
+
+.cajas {
+  margin: 5px;
+  padding: 10px;
+
+  h1,
+  p {
+    font-family: $fuente-parrafos
   }
-  
-  .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    border: dotted #fed792 2px;
+}
+
+.imgs {
+  border-radius: 25px;
+  width: 300px;
+}
+
+.butContainer {
+  border-radius: 10px;
+  background-color: $color-grisClaro;
+  margin: 5px auto;
+  padding: 5px;
+  border: none;
+
+  @include buttons
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: dotted #fed792 2px;
+}
+
+.ubicacion,
+.gMaps {
+  margin: 10px;
+}
+
+.ubicacion p a {
+  color: $color-rojo;
+  text-decoration: none;
+}
+
+/* media queries mainPrincipal*/
+
+div.cajasContainer {
+  @include tabletMin {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .ubicacion, .gMaps {
+
+  @include deskMin {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/*pageContacto*/
+
+.cMainContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.cFormContainer {
+  width: 90%;
+  margin: 0 auto;
+  background: #a9a39a;
+  margin: 20px auto;
+  border-radius: 20px;
+
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
     margin: 10px;
-  }
-  
-  .ubicacion p a {
-    color: $color-rojo;
-    text-decoration: none;
-  }
-  
-  /* media queries mainPrincipal*/
-
-  div.cajasContainer {
-    @include tabletMin {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @include deskMin {
-        grid-template-columns: repeat(3 , 1fr);
-    }
-  }
-
-
-  /*pageContacto*/
-
-  .cMainContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .cFormContainer {
-    width: 90%;
-    margin: 0 auto;
-    background: #a9a39a;
-    margin: 20px auto;
-    border-radius: 20px;
-  
-    h1 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 24px;
-      margin: 10px;
-      font-weight: bolder;
-    }
-  
-    p {
-      color: $color-rojo;
-      text-decoration: underline;
-      padding: 5px;
-    }
-  }
-  
-  label {
     font-weight: bolder;
   }
-  
-  input, textarea {
-    margin: 5px auto;
-    width: 40%;
-    text-align: center;
-  }
-  
-  .butContainer:hover {
+
+  p {
     color: $color-rojo;
+    text-decoration: underline;
+    padding: 5px;
   }
+}
 
-  
-  /*pageCartas*/
+label {
+  font-weight: bolder;
+}
 
-  .cartasContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .mContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .cartasImg {
-    max-width: 400px;
-    width: 90%;
-  }
-  
-  div .titCartas {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .down a {
-    color: $color-rojo;
-  }
+input,
+textarea {
+  margin: 5px auto;
+  width: 50%;
+  text-align: center;
+}
 
-  
-  /*Nosotros*/
+.butContainer:hover {
+  color: $color-rojo;
+}
+
+
+/*pageCartas*/
+
+.cartasContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cartasImg {
+  max-width: 400px;
+  width: 90%;
+}
+
+div .titCartas {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.down a {
+  color: $color-rojo;
+}
+
+
+/*Nosotros*/
 
 .mainNosotros {
-    margin: 20px 5px;
-    text-align: center;
-  }
-  
-  .nTitle {
-    color: $color-rojo;
-    text-decoration: underline;
-  }
-  
-  .nParrafo {
-    margin-top: 20px;
-    font-size: 18px;
-  }
+  margin: 20px 5px;
+  text-align: center;
+}
 
-  
-  /*obseguios*/
+.nTitle {
+  color: $color-rojo;
+  text-decoration: underline;
+}
+
+.nParrafo {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+/*obseguios*/
 
 .oPromo {
-    width: 80%;
-    max-width: 300px;
-  }
-  
-  .oPromoP {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $color-rojo;
-    font-size: 14px;
-  }
-  
-  .oTitle {
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: underline;
-    color: $color-rojo;
-  }
-  
-  .oParrafo {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px;
-  }
-  
-  .oCardsContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .oContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #a9a39a;
-  }
-  
+  width: 80%;
+  max-width: 300px;
+}
+
+.oPromoP {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $color-rojo;
+  font-size: 14px;
+}
+
+.oTitle {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+  color: $color-rojo;
+}
+
+.oParrafo {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.oTitleSection {
+  text-align: center;
+  width: 100%;
+
+}
+
+.oSection {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.oArticle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.card {
+  width: 286px;
+  height: 475px;
+  text-align: center
+}
+
+div.card-body {
+  background-color: $color-grisOscuro;
+
+  @include buttons
+}
 
 
+
+
+
+@import "mediaQ";
