@@ -259,6 +259,8 @@ div .titCartas {
 .oTitleSection {
   text-align: center;
   width: 100%;
+  color: #df0914;
+  text-decoration: underline;
 }
 
 .oSection {
