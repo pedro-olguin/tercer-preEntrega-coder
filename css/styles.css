@@ -297,7 +297,7 @@ div.card-body a:active {
 }
 
 /*mediaQ header*/
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .redesButtonContainer {
     display: none;
   }

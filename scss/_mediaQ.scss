@@ -1,7 +1,7 @@
   /*mediaQ header*/
 
   .redesButtonContainer {
-    @include tabletMax {
+    @include deskMax {
       display: none;
     }
   }
